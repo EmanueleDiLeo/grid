@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 10px;
+  background-color:aliceblue
+}
+
+.item{
+  background-color: grey;
+  color: white;
+  font-size: 150%;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-auto-rows: repeat(4, 150px);
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+
+  grid-template-areas: 
+  "a A . b . C"
+  ". D d B E c"
+  "F . g . e ."
+  "f . G . H h"
+}
+
+img{
+  height: 150px;
+  width: 150px;
+}
+
+.caption{
+  background-color: aqua;
+  color:blueviolet;
+  position: relative;
+}
+
+.caption h3{
+  font-size: 120%;
+  padding:5px ;
+}
+
+.border{
+  position: absolute;
+   background: repeating-linear-gradient(
+    45deg,
+    white,
+    white 10px,
+    gray 10px,
+    gray 20px
+   );
+}
+
+.border.left{
+  width: 10px;
+  height: 150px;
+  top: 0;
+  left: -10px;
+}
+
+.border.right{
+  width: 10px;
+  height: 150px;
+  top: 0;
+  right: -10px;
+}
+
+.border.bot{
+  height: 10px;
+  width: 150px;
+  bottom: -10px;
+}
+
+.border.top{
+  height: 10px;
+  width: 150px;
+  top: -10px;
+}
+
+.cap1{
+ grid-area: A;
+}
+
+.cap2{
+  grid-area: B;
+}
+
+.cap3{
+  grid-area: C;
+}
+
+.cap4{
+  grid-area: D;
+}
+
+.cap5{
+  grid-area: E;
+}
+
+.cap6{
+  grid-area: F;
+}
+
+.cap7{
+  grid-area: G;
+}
+
+.cap8{
+  grid-area: H;
+}
+
+.pro1{
+  grid-area: a;
+}
+
+.pro2{
+  grid-area: b;
+}
+
+.pro3{
+  grid-area: c;
+}
+
+.pro4{
+  grid-area: d;
+}
+
+.pro5{
+  grid-area: e;
+}
+
+.pro6{
+  grid-area: f;
+}
+
+.pro7{
+  grid-area: g;
+}
+
+.pro8{
+  grid-area: h;
+}
